@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/inset_2l"
+    android:paddingRight="@dimen/inset_l"
+    android:background="@drawable/selector_style_list_item_bg"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_delete"
+        android:scaleType="centerInside"
+        android:paddingRight="@dimen/inset_s"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/ts_16"
+        android:paddingTop="@dimen/inset_l"
+        android:paddingBottom="@dimen/inset_l"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="middle"
+        android:textColor="#000000"
+        android:paddingRight="@dimen/inset_l"
+        tools:ignore="EllipsizeMaxLines" />
+
+    <ImageView
+        android:id="@+id/iv_drag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_dragger"
+        android:scaleType="centerInside"
+        android:clickable="true"
+        android:paddingRight="@dimen/inset_s"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        />
+
+</LinearLayout>

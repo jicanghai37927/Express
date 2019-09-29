@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5"
+    android:orientation="vertical"
+    tools:context="com.haiyunshan.express.NoteShareActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/bg_top_action_bar"
+        android:paddingLeft="@dimen/action_bar_horizontal_margin"
+        android:paddingRight="@dimen/action_bar_horizontal_margin"
+        app:layout_scrollFlags="snap|scroll|enterAlways">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/activity_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:letterSpacing="0.0"
+            android:text="分享预览"
+            android:textColor="#000000"
+            android:textSize="@dimen/ts_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_select"
+            style="@style/activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="全不选"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <!-- 内容区 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <!-- 底部菜单区 -->
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/bg_bottom_action_bar"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/inset_4l"
+        android:paddingRight="@dimen/inset_4l"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/btn_capture"
+            style="@style/activity_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/inset_2l"
+            android:layout_marginRight="@dimen/inset_2l"
+            android:layout_weight="1"
+            android:text="保存截图" />
+
+        <TextView
+            android:id="@+id/btn_share"
+            style="@style/activity_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/inset_2l"
+            android:layout_marginRight="@dimen/inset_2l"
+            android:layout_weight="1"
+            android:text="分享到微博" />
+    </LinearLayout>
+
+
+</LinearLayout>

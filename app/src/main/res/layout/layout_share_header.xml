@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_share_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="@dimen/inset_s"
+    android:paddingBottom="@dimen/inset_s"
+    android:paddingLeft="@dimen/inset_2l"
+    android:paddingRight="@dimen/inset_2l">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_round_rect">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:paddingLeft="@dimen/inset_t"
+                android:paddingRight="@dimen/inset_t"
+                android:textColor="#000000"
+                android:textSize="@dimen/ts_16"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月"
+                android:textColor="#888888"
+                android:textSize="@dimen/ts_8"/>
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22"
+                android:paddingLeft="@dimen/inset_t"
+                android:paddingRight="@dimen/inset_t"
+                android:textColor="#000000"
+                android:textSize="@dimen/ts_16"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textColor="#888888"
+                android:textSize="@dimen/ts_8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018"
+                android:paddingLeft="@dimen/inset_t"
+                android:paddingRight="@dimen/inset_t"
+                android:textColor="#000000"
+                android:textSize="@dimen/ts_16"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年"
+                android:textColor="#888888"
+                android:textSize="@dimen/ts_8"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/inset_m">
+
+            <TextView
+                android:id="@+id/tv_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"
+                android:text="第 1 节，共 13 节"
+                android:gravity="left"
+                android:textColor="#777777"
+                android:textSize="@dimen/ts_10"
+                android:visibility="visible"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="星期二 10:32"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:textSize="@dimen/ts_14"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#535353"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:lines="1"
+            android:text="全文 16 个字"
+            android:gravity="right"
+            android:textColor="#777777"
+            android:textSize="@dimen/ts_10"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="false"
+    android:background="@drawable/selector_list_item"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/inset_2l"
+    android:paddingRight="@dimen/inset_l">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="false"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/inset_l"
+        android:paddingRight="@dimen/inset_2l"
+        android:paddingTop="@dimen/inset_l"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.8"
+        android:textColor="#ef8b01"
+        android:textSize="16sp"
+        android:text="新建文件夹"/>
+
+</LinearLayout>

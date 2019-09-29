@@ -1,0 +1,171 @@
+{
+  "list": [
+    {
+      "id": "headline",
+      "name": "大标题",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 24,
+      "bold": true,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "subtitle",
+      "name": "副标题",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 20,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "title",
+      "name": "小标题",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 18,
+      "bold": true,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "title2",
+      "name": "小标题 2",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 18,
+      "bold": true,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "title3",
+      "name": "小标题 3",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 18,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+
+    {
+      "id": "titleRed",
+      "name": "小标题（红色）",
+
+      "typeface": "",
+      "textColor": "#80ff0000",
+      "textSize": 18,
+      "bold": true,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "body",
+      "name": "正文",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 18,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "explain",
+      "name": "说明",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 16,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+
+    {
+      "id": "footer",
+      "name": "页眉与页脚",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 16,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "footnote",
+      "name": "脚注",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 16,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    },
+
+    {
+      "id": "label",
+      "name": "标签",
+
+      "typeface": "",
+      "textColor": "#000000",
+      "textSize": 16,
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "letterMultiplier": 0,
+      "lineMultiplier": 100,
+      "align": "start"
+    }
+  ]
+
+}

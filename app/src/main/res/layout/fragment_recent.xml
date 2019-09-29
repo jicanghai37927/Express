@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiyunshan.express.fragment.RecentFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/bg_top_action_bar"
+        android:paddingLeft="@dimen/action_bar_horizontal_margin"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/activity_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="最近使用"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btn_create"
+            style="@style/activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/inset_l"
+            android:paddingRight="@dimen/inset_l"
+            android:src="@drawable/ic_plus"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efeff4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/inset_3l"
+            android:paddingTop="@dimen/inset_3l">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inset_4l"
+                android:gravity="center"
+                android:text="无最近项目"
+                android:textColor="#000000"
+                android:textSize="@dimen/ts_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/inset_4l"
+                android:layout_marginRight="@dimen/inset_4l"
+                android:layout_marginTop="@dimen/inset_l"
+                android:gravity="center"
+                android:text="在此处查看最近打开过的笔记，或使用“浏览”标签查看所有笔记。"
+                android:textColor="#000000"
+                android:textSize="@dimen/ts_18"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

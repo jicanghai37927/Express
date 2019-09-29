@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efeff4"
+    tools:context="com.haiyunshan.express.compose.fragment.PageFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/bg_format_title"
+        android:soundEffectsEnabled="false"
+        android:hapticFeedbackEnabled="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:letterSpacing="0.1"
+            android:text="页面设置"
+            android:textColor="#000000"
+            android:textSize="@dimen/ts_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_done"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_down"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/inset_2l">
+
+            <!-- 字间距 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/format_item_height"
+                android:layout_marginTop="@dimen/inset_2l"
+                android:background="@drawable/selector_format_item_single"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/inset_2l"
+                android:paddingRight="@dimen/inset_2l">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="左边距"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ts_16" />
+
+                <TextView
+                    android:id="@+id/tv_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20磅"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ts_16" />
+
+                <ImageView
+                    android:id="@+id/btn_smaller_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/inset_l"
+                    android:layout_marginLeft="@dimen/inset_l"
+                    android:layout_marginTop="@dimen/inset_l"
+                    android:background="@drawable/selector_radio_group_left"
+                    android:minWidth="48dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_minus" />
+
+                <ImageView
+                    android:id="@+id/btn_bigger_padding_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/inset_l"
+                    android:layout_marginLeft="-2px"
+                    android:layout_marginTop="@dimen/inset_l"
+                    android:background="@drawable/selector_radio_group_right"
+                    android:minWidth="48dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_plus" />
+
+            </LinearLayout>
+
+            <!-- 行间距 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/format_item_height"
+                android:layout_marginTop="-1px"
+                android:background="@drawable/selector_format_item_single"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/inset_2l"
+                android:paddingRight="@dimen/inset_2l">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="右边距"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ts_16" />
+
+                <TextView
+                    android:id="@+id/tv_padding_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20磅"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ts_16" />
+
+                <ImageView
+                    android:id="@+id/btn_less_padding_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/inset_l"
+                    android:layout_marginLeft="@dimen/inset_l"
+                    android:layout_marginTop="@dimen/inset_l"
+                    android:background="@drawable/selector_radio_group_left"
+                    android:minWidth="48dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_minus" />
+
+                <ImageView
+                    android:id="@+id/btn_more_padding_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/inset_l"
+                    android:layout_marginLeft="-2px"
+                    android:layout_marginTop="@dimen/inset_l"
+                    android:background="@drawable/selector_radio_group_right"
+                    android:minWidth="48dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_plus" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

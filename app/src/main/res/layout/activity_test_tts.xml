@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haiyunshan.express.test.TestTTSActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="掌权的第一年，他总在四下无人时，宣念着变革的决心，看着昔日同道，以嘲讽语气，恭喜着高位上的自己，他在永昼的慈光之塔，为自己点起一盏小烛；
+第二年，耳边常回响着不谅解的声音，一道道回过身去的背影，他们说“错看了，无法认清你了，原来你是这种人。”这是必然的过程，为什么还是会对这过程耿耿于怀，权利熏心吗？他不由自问；
+第三年，在惊涛骇浪中。他如愿掌了舵，但掌舵的手，却从此有了一股涤洗不去的腥味，他时常为这股血腥，而浅眠、而惊醒。这一年，一切如愿，嗅觉却出了问题。
+从此，他只反复的记着这三年，眼里、心里、却再也看不清，永昼中点起小烛的意义。
+此后，岁月不堪记，无衣师尹不堪提……"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/speech"
+                android:text="Speech"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/record"
+                android:text="Record"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

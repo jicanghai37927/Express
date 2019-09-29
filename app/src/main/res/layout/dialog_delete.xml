@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000" >
+
+    <LinearLayout
+        android:id="@+id/action_sheet_actionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/inset_l"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/popupmenu_item_text"
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fc3d39"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/dialog_button"
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inset_l"
+            android:background="@drawable/selector_popup_btn"
+            android:text="取消"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.haiyunshan.express.compose.NoteComposeFragment">
+
+    <!-- 文档区 -->
+
+    <com.haiyunshan.express.compose.widget.DocumentView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true">
+
+    </com.haiyunshan.express.compose.widget.DocumentView>
+
+    <!-- 交互区 -->
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/soft_keyboard_height"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <!-- 顶部菜单区 -->
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_gravity="top"
+        android:background="@drawable/bg_top_action_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/action_bar_horizontal_margin"
+        android:paddingRight="@dimen/action_bar_horizontal_margin"
+        android:soundEffectsEnabled="false">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/activity_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:gravity="center"
+            android:text=""
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_done"
+            style="@style/activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="完成"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_pic"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_editor_photo_24dp" />
+
+        <ImageView
+            android:id="@+id/btn_format"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_paint" />
+
+        <ImageView
+            android:id="@+id/btn_create"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_create"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_compose"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_compose"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_dot" />
+    </LinearLayout>
+
+
+    <!-- 底部菜单区 -->
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottom_action_bar"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/action_bar_horizontal_margin"
+        android:paddingRight="@dimen/action_bar_horizontal_margin"
+        android:soundEffectsEnabled="false">
+
+        <TextView
+            android:id="@+id/btn_capture"
+            style="@style/activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="截图"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btn_voice"
+            style="@style/activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="朗读"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/inset_l"
+    android:paddingLeft="@dimen/inset_2l"
+    android:paddingRight="@dimen/inset_2l"
+    android:paddingTop="@dimen/inset_l">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        style="@style/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/inset_l"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_plus_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_plus" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/inset_l"
+        android:gravity="center_vertical"
+        android:text="创建笔记"
+        android:textColor="@color/selector_button_black"
+        android:textSize="@dimen/ts_16" />
+
+
+</LinearLayout>

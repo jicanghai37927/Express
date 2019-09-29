@@ -1,0 +1,30 @@
+{
+  "title": {
+    "id": "title",
+    "type": "paragraph",
+    "text": "",
+    "style": {
+      "id": "headline"
+    }
+  },
+
+  "subtitle": {
+    "id": "subtitle",
+    "type": "paragraph",
+    "text": "",
+    "style": {
+      "id": "subtitle"
+    }
+  },
+
+  "body": [
+    {
+      "id": "body",
+      "type": "paragraph",
+      "text": "",
+      "style": {
+        "id": "body"
+      }
+    }
+  ]
+}

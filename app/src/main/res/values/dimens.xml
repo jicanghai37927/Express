@@ -1,0 +1,55 @@
+<resources>
+
+    <dimen name="listPreferredItemHeight">?android:attr/listPreferredItemHeight</dimen>
+
+    <dimen name="dp_zero">0dp</dimen>
+
+    <!-- Action Bar -->
+    <dimen name="action_bar_height">42dp</dimen>
+    <dimen name="action_bar_horizontal_margin">8dp</dimen>
+    <dimen name="action_bar_shadow_height">1px</dimen>
+
+    <dimen name="format_item_height">42dp</dimen>
+
+    <dimen name="soft_keyboard_height">252dp</dimen>
+    <dimen name="extra_height">252dp</dimen>
+
+    <dimen name="status_bar_height">26dp</dimen>
+
+    <dimen name="doc_margin_top">@dimen/action_bar_height</dimen>
+    <dimen name="doc_margin_bottom">@dimen/extra_height</dimen>
+
+    <!-- Margin -->
+    <dimen name="inset_t">2dp</dimen>
+    <dimen name="inset_s">4dp</dimen>
+    <dimen name="inset_m">6dp</dimen>
+    <dimen name="inset_l">8dp</dimen>
+    <dimen name="inset_2l">16dp</dimen>
+    <dimen name="inset_3l">24dp</dimen>
+    <dimen name="inset_4l">32dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="ts_28">28sp</dimen>
+    <dimen name="ts_24">24sp</dimen>
+    <dimen name="ts_20">20sp</dimen>
+    <dimen name="ts_18">18sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="ts_14">14sp</dimen>
+    <dimen name="ts_12">12sp</dimen>
+    <dimen name="ts_10">10sp</dimen>
+    <dimen name="ts_8">8sp</dimen>
+    <dimen name="ts_6">6sp</dimen>
+
+    <dimen name="title_item_padding">4dp</dimen>
+    <dimen name="entity_item_margin">12dp</dimen>
+
+    <dimen name="dialog_corner_radius">12dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="popup_corner_radius">12dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

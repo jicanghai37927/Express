@@ -1,0 +1,178 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiyunshan.express.fragment.NoteFragment">
+
+    <!-- 顶部条 -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            app:layout_scrollFlags="exitUntilCollapsed">
+
+            <RelativeLayout
+                android:id="@+id/top_normal_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_top_action_bar"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/action_bar_horizontal_margin"
+                android:paddingRight="@dimen/action_bar_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/btn_back"
+                    style="@style/activity_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/btn_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/inset_t"
+                    android:layout_toLeftOf="@+id/btn_edit"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/inset_l"
+                    android:paddingRight="@dimen/inset_l"
+                    android:src="@drawable/ic_plus" />
+
+                <TextView
+                    android:id="@+id/btn_edit"
+                    style="@style/activity_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="选择"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top_edit_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_top_action_bar"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/action_bar_horizontal_margin"
+                android:paddingRight="@dimen/action_bar_horizontal_margin"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/btn_select"
+                    style="@style/activity_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="全选"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_edit_title"
+                    style="@style/activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/btn_done"
+                    style="@style/activity_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- 内容区 -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#ffffff" />
+
+    <!-- 底部栏 -->
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/bg_bottom_action_bar"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/btn_popup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_popup"
+            android:scaleType="centerInside"
+            android:paddingRight="@dimen/inset_4l"/>
+
+        <ImageView
+            android:id="@+id/btn_copy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_copy"
+            android:paddingRight="@dimen/inset_2l"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/btn_folder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_folder"
+            android:paddingLeft="@dimen/inset_2l"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/btn_trash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/selector_trash"
+            android:scaleType="centerInside"
+            android:paddingLeft="@dimen/inset_4l"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

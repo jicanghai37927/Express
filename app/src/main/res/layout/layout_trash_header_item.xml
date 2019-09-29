@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/inset_l"
+    android:paddingLeft="@dimen/inset_l"
+    android:paddingRight="@dimen/inset_l"
+    android:paddingTop="@dimen/inset_l"
+    android:background="#80ededed" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="笔记将在此处保留 30 天，之后将永久删除。最多可能保留 40 天。"
+        android:textColor="@color/selector_button_black"
+        android:textStyle="bold"
+        android:lineSpacingExtra="@dimen/inset_t"
+        android:textSize="@dimen/ts_14" />
+
+</LinearLayout>

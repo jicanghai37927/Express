@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="false"
+    android:background="@drawable/selector_list_item"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/inset_2l"
+    android:paddingRight="@dimen/inset_l">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        style="@style/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="false"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/inset_l"
+        android:paddingRight="@dimen/inset_2l"
+        android:paddingTop="@dimen/inset_l"
+        android:textColor="@color/selector_catalog_name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/inset_l"
+        android:text="0"
+        android:textColor="@color/selector_catalog_name"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_right_arrow" />
+</LinearLayout>

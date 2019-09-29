@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="key_id" type="id" />
+    <item name="key_mode" type="id" />
+    <item name="key_collapse" type="id"/>
+
+    <item name="tag_segment" type="id"/>
+
+    <item name="edit_paragraph" type="id" />
+
+    <item name="highlight" type="id" />
+    <item name="bold" type="id" />
+    <item name="italic" type="id" />
+
+</resources>

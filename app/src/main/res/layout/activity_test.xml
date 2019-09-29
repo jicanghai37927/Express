@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haiyunshan.express.test.TestActivity">
+
+    <LinearLayout
+        android:id="@+id/nsv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff00ff"
+                android:clipToPadding="false"
+                android:editable="true"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:text="金\n刚\n般\n若\n波\n罗\n蜜\n经"
+                android:textSize="108dp" />
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/soft_keyboard_height"
+            android:orientation="horizontal"
+            android:background="#ffff00"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="#ff0000"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="格式"/>
+    </LinearLayout>
+
+
+</FrameLayout>

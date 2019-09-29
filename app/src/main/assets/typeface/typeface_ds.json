@@ -1,0 +1,49 @@
+{
+  "list": [
+    {
+      "id": "system",
+      "name": "系统字体",
+      "uri": "",
+      "alias": "系统字体",
+      "type": 1,
+      "created": 1
+    },
+
+    {
+      "id": "66829969a5584ce093d3b47c96029c35",
+      "name": "方正隶书简体",
+      "uri": "66829969a5584ce093d3b47c96029c35.ttf",
+      "alias": "隶书简体",
+      "type": 2,
+      "enable": 0,
+      "created": 11
+    },
+    {
+      "id": "3ffe58d31b81457195007d72a8cea33e",
+      "name": "方正苏新诗柳楷简体",
+      "uri": "3ffe58d31b81457195007d72a8cea33e.ttf",
+      "alias": "柳楷简体",
+      "type": 2,
+      "enable": 0,
+      "created": 12
+    },
+    {
+      "id": "9d18bd0800dc4c7386278ea40423ab18",
+      "name": "田英章楷书",
+      "uri": "9d18bd0800dc4c7386278ea40423ab18.ttf",
+      "alias": "硬笔楷书简体",
+      "type": 2,
+      "enable": 0,
+      "created": 13
+    },    
+    {
+      "id": "7e3d81a0e51d47489331471b4daae8c0",
+      "name": "方正清刻本悦宋简体",
+      "uri": "7e3d81a0e51d47489331471b4daae8c0.ttf",
+      "alias": "清刻本悦宋简体",
+      "type": 2,
+      "enable": 0,
+      "created": 14
+    }
+  ]
+}

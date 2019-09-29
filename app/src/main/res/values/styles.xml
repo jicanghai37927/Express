@@ -1,0 +1,171 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.Design.NoActionBar">
+
+    </style>
+
+
+    <style name="TestSoftKeyboardTheme" parent="@style/AppTheme">
+
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="TranslucentDecorTheme" parent="@style/AppTheme">
+
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="NoteComposeTheme" parent="@style/AppTheme">
+
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="StarterTheme" parent="@style/TranslucentDecorTheme">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/bg_starter</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+
+    </style>
+
+
+    <!-- 标题 -->
+    <style name="activity_title">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxWidth">228dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 按钮 -->
+    <style name="activity_button">
+        <item name="android:textColor">@color/selector_activity_button</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 返回按钮 -->
+    <style name="activity_back_button" parent="activity_button">
+        <item name="android:drawableLeft">@drawable/selector_btn_back</item>
+    </style>
+
+    <style name="delete_button">
+        <item name="android:textColor">@color/selector_delete_button</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 对话框按钮 -->
+    <style name="dialog_button">
+        <item name="android:textColor">@color/selector_dialog_button</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 对话框标题 -->
+    <style name="dialog_title">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 对话框消息 -->
+    <style name="dialog_message">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="message_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MenuDialogAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="popupmenu_item_text" parent="dialog_button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/selector_popup_menu_item_single</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="MenuDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!-- 复选框 -->
+    <style name="checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="setting_single">
+        <item name="android:background">@drawable/selector_setting_bg_single</item>
+        <item name="android:paddingLeft">@dimen/inset_2l</item>
+        <item name="android:paddingRight">@dimen/inset_l</item>
+    </style>
+
+    <style name="setting_top" parent="@style/setting_single">
+        <item name="android:background">@drawable/selector_setting_bg_top</item>
+    </style>
+
+    <style name="setting_middle" parent="@style/setting_single">
+        <item name="android:background">@drawable/selector_setting_bg_middle</item>
+    </style>
+
+    <style name="setting_bottom" parent="@style/setting_single">
+        <item name="android:background">@drawable/selector_setting_bg_bottom</item>
+    </style>
+
+    <style name="share_button">
+        <item name="android:textSize">@dimen/ts_14</item>
+        <item name="android:textColor">#dddddd</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+</resources>

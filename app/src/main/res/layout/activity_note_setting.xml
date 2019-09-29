@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haiyunshan.express.NoteSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/bg_top_action_bar"
+        android:paddingLeft="@dimen/action_bar_horizontal_margin"
+        android:paddingRight="@dimen/action_bar_horizontal_margin">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/activity_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="更多"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_done"
+            style="@style/activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="完成"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#f0eff5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/inset_2l">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 字体 -->
+
+                <RelativeLayout
+                    android:id="@+id/item_typeface"
+                    style="@style/setting_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center_vertical"
+                        android:text="字体"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ts_16"
+                        android:drawableRight="@drawable/ic_right_arrow"/>
+                </RelativeLayout>
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/inset_2l"
+                    android:background="#c8c7cc" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 段落样式 -->
+
+                <RelativeLayout
+                    android:id="@+id/item_style"
+                    style="@style/setting_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center_vertical"
+                        android:text="段落样式"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ts_16"
+                        android:drawableRight="@drawable/ic_right_arrow"/>
+                </RelativeLayout>
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/inset_2l"
+                    android:background="#c8c7cc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 页面设置 -->
+
+                <RelativeLayout
+                    android:id="@+id/item_page_setting"
+                    style="@style/setting_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center_vertical"
+                        android:text="页面设置"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ts_16" />
+                </RelativeLayout>
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c7cc"
+                    android:layout_marginLeft="@dimen/inset_2l"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 页面设置 -->
+
+                <RelativeLayout
+                    android:id="@+id/item_voice_setting"
+                    style="@style/setting_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center_vertical"
+                        android:text="文字转语音设置"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ts_16" />
+                </RelativeLayout>
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c7cc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inset_2l"
+                android:orientation="vertical">
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c7cc" />
+
+                <!-- 新建文档 -->
+
+                <RelativeLayout
+                    android:id="@+id/item_create"
+                    style="@style/setting_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/activity_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="#ef8b01"
+                        android:text="新建笔记" />
+                </RelativeLayout>
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c7cc" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
